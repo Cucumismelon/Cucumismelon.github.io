@@ -1,0 +1,192 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <style>
+                div{
+                    border:1px solid red;
+                    width:400px;
+                    margin:20px auto;
+                }
+                </style>
+                <body>
+                  <div><titel><h1>武林群侠传，金庸知多少</h1></titel></div>
+                </body>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+    <style type="text/css">
+        body {background-image:url(金庸bac.jpg); background-repeat:no-repeat; background-attachment:fixed} </style> 
+    
+    <script language="JavaScript">
+            function startTime()   
+            {   
+                var today=new Date();//定义日期对象   
+                var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+                var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年    
+                var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+                var hh=today.getHours();//通过日期对象的getHours方法返回小时   
+                var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+                var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+                // 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+                MM=checkTime(MM);
+                dd=checkTime(dd);
+                mm=checkTime(mm);   
+                ss=checkTime(ss);    
+                var day; //用于保存星期（getDay()方法得到星期编号）
+                if(today.getDay()==0)   day   =   "星期日 " 
+                if(today.getDay()==1)   day   =   "星期一 " 
+                if(today.getDay()==2)   day   =   "星期二 " 
+                if(today.getDay()==3)   day   =   "星期三 " 
+                if(today.getDay()==4)   day   =   "星期四 " 
+                if(today.getDay()==5)   day   =   "星期五 " 
+                if(today.getDay()==6)   day   =   "星期六 " 
+                document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " + day;   
+                setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法 
+            }   
+             
+            function checkTime(i)   
+            {   
+                if (i<10){
+                    i="0" + i;
+                }   
+                  return i;
+            }  
+        </script>
+        <script language="JavaScript">
+                function scorequiz(form) {
+                 var list=0
+                 if(form.chk1.value!=null  &&  form.chk1.value=="C") {list=list+10}
+                 if(form.chk2.value!=null  &&  form.chk2.value=="B") {list=list+10}
+                 if(form.chk3.value!=null  &&  form.chk3.value=="D") {list=list+10}
+                 if(form.chk4.value!=null  &&  form.chk4.value=="A") {list=list+10}
+                 if(form.chk5.value!=null  &&  form.chk5.value=="A") {list=list+10}
+                 if(form.chk6.value!=null  &&  form.chk6.value=="A") {list=list+10}
+                 if(form.chk7.value!=null  &&  form.chk7.value=="*") {list=list+10}
+                 if(form.chk8.value!=null  &&  form.chk8.value=="*") {list=list+10}
+                 if(form.chk9.value!=null  &&  form.chk9.value=="*") {list=list+10}
+                 if(form.chk10.value!=null  &&  form.chk10.value=="*") {list=list+10}
+                 //alert(list);
+                 form.SCORE.value =eval(list)
+                 if (form.SCORE.value<=80){
+                ok="加油呀，你这次不及格哦！"
+                alert(ok)}
+                }
+        </script>
+</head>
+<table width="75%" border="0" align="center">
+          <tr>
+            <td>
+<p> 我走过山时，山不说话。<br>
+    我路过海时，海不说话。<br>
+    小毛驴滴滴答答，倚天剑伴我走天涯。<br>
+    大家都说我因为爱着杨过大侠，才在峨眉山上出了家。<br>
+    其实我只是爱上了峨眉山上的云和霞，<br>
+    像极了十六岁那年的烟花。</p>
+    <font color="black" ><p>非常喜欢这首写给郭襄的诗，仿佛此诗一出，入口一读，整个天地都变得明朗了起来。乱世出枭雄，每个时代都有自己的生存法则，也总有人能在江湖中杀出自己的道路。<br><br>金庸大师的书卷，则是我们人生路上聊以慰藉的精神食粮。那么，你对金庸了解多少呢？</p></font>
+<body onload="startTime()">
+    当前时间：<font color="red"><span id="nowDateTimeSpan"></span></font> 
+<h2>一、单选题（每题十分）</h2>
+<ol>
+    <li>
+<form>
+    《神雕侠侣》中杨过失去的是哪只手臂？为何失去？<br>
+     <input type="radio" name="chk1"value="A"/> 左臂，被郭芙斩断<br>
+     <input type="radio" name="chk1"value="B"/> 左臂，受金轮大王毒害<br>
+     <input type="radio" name="chk1"value="C"/> 右臂，被郭芙斩断<br>
+     <input type="radio" name="chk1"value="D"/> 右臂，受金轮大王毒害<br>
+</form>
+</li>
+    <li>
+    <form>
+        《神雕侠侣》中杨过给郭襄儿的三枚金针，郭襄许的第一个愿望是什么？<br>
+        <input type="radio" name="chk2"value="A"/> 希望杨过能找到小龙女并且长长久久<br>
+        <input type="radio" name="chk2"value="B"/> 希望杨过摘掉面具<br>
+        <input type="radio" name="chk2"value="C"/> 希望杨过能帮助郭靖守卫襄阳城<br>
+        <input type="radio" name="chk2"value="D"/> 希望杨过能来给自己过生日<br>
+    </form>
+    </li>
+    <li>
+        <form>
+           常言道，“人在江湖，身不由己”。在小说最后，江湖人士的归宿大多是____。<br>
+           <input type="radio" name="chk3" value="A"/>称霸武林<br>
+           <input type="radio" name="chk3" value="B"/>金盆洗手<br>
+           <input type="radio" name="chk3" value="C"/>归隐<br>
+           <input type="radio" name="chk3" value="D"/>死亡<br>
+        </form>
+    </li>
+    <li>
+        <form>
+         大反派金轮法王修炼的密宗护法神功龙象般若功共分几层境界？<br>
+           <input type="radio" name="chk4" value="A"/>十三<br>
+           <input type="radio" name="chk4" value="B"/>十五<br>
+           <input type="radio" name="chk4" value="C"/>十七<br>
+           <input type="radio" name="chk4" value="D"/>九<br>
+        </form>
+    </li>
+    <li>
+        <form>
+             “大哥料事如神，言之有理。”是下列哪一组合中人的口头禅？<br>
+             <input type="radio" name="chk5" value="A"/>太岳四侠<br>
+             <input type="radio" name="chk5" value="B"/>藏边五丑<br>
+             <input type="radio" name="chk5" value="C"/>桃谷六仙<br>
+             <input type="radio" name="chk5" value="D"/>江南七怪<br>
+        </form>
+    </li>
+    <li>
+        <form>
+             那女子笑道：“我跟他老人家有四十年不见了，起初还真认不出来，<br>直到见他老人家出手，这一掌‘云横秦岭’如此威猛，中原再没第二个人使得出，才知是他。”<br>――他即华山派归辛树。归辛树内力深厚，尚在袁承志之上，连天地会陈近南也多有不如。归辛树向以拳掌见长，他号称：____<br>
+             <input type="radio" name="chk6" value="A"/>神拳无敌<br>
+             <input type="radio" name="chk6" value="B"/>无影神拳<br>
+             <input type="radio" name="chk6" value="C"/>百胜神拳<br>
+             <input type="radio" name="chk6" value="D"/>一拳断岳<br>
+        </form>
+    </li>
+</ol>
+<h2>二、多选择题（每题十分）</h2> 
+<ol>
+    <li>
+        <form>
+        韦小宝在我国近代外交内治史上的突出贡献有______。<br>
+        <input type="checkbox" name="chk7" value="A" />与蒙古葛尔丹王子、西藏桑结高僧友好蹉商、达成战略伙伴关系<br>
+        <input type="checkbox" name="chk7" value="B" />举荐施琅等名将收复台湾，坚决抵制放弃台湾的主张，维护了祖国的领土主权<br>
+        <input type="checkbox" name="chk7" value="C" />亲自指挥中俄边境自卫反击战，主持签订《中俄尼布楚条约》<br>
+        <input type="checkbox" name="chk7" value="D" />出访俄国，与苏菲亚女王建立了亲密的睦邻友好关系<br>
+        <input type="checkbox" name="chk7" value="E" />打入神龙教巢穴开展卧底活动，并彻底催毁了该邪教组织<br>
+        </form>
+    </li>
+    <li>
+        <form>
+        经DNA鉴定是父子关系的有______。<br>
+        <input type="checkbox" name="chk8" value="A"/>乔三环、乔峰<br>
+        <input type="checkbox" name="chk8" value="B"/>段正淳、段誉<br>
+        <input type="checkbox" name="chk8" value="C"/>玄慈、虚竹<br>
+        <input type="checkbox" name="chk8" value="D"/>雍正、乾隆<br>
+        <input type="checkbox" name="chk8" value="E"/>乾隆、福康安<br>
+        </form>
+    </li>
+</ol>
+<h2>三、不定项选择题（每题十分）</h2> 
+<ol>
+        <li>
+                <form>
+                 众所皆知，东邪黄药师门下六大第子皆以“风”字谓之。下列哪些出自黄药师门下？<br>
+                 <input type="checkbox" name="chk9" value="A"/>曲灵风<br>
+                 <input type="checkbox" name="chk9" value="B"/>刘乘风<br>
+                 <input type="checkbox" name="chk9" value="C"/>武眠风<br>
+                 <input type="checkbox" name="chk9" value="D"/>冯默风<br>
+                 <input type="checkbox" name="chk9" value="E"/>常长风<br>
+                </form>
+            </li>
+            <li>
+                <form>
+                以下对嵩山派左冷禅的所作所为，叙述错误的是______。<br>
+                <input type="checkbox" name="chk10" value="A"/>率大批高手远赴福建，血洗林震南福威镖局，抢夺林家辟邪剑谱<br>
+                <input type="checkbox" name="chk10" value="B"/>在衡山刘正风金盆洗手仪式上大造事端，俨然以五岳盟主、侠义正道自居，残杀刘正风家人及弟子<br>
+                <input type="checkbox" name="chk10" value="C"/>挑唆封不平、成不忧前往华山抢夺掌门人席位；在华山脚下聚集黑道人士，企图武力制服华山派<br>
+                <input type="checkbox" name="chk10" value="D"/>在少林寺暗害恒山定闲、定逸两位师太，使恒山派群尼无首<br>
+                <input type="checkbox" name="chk10" value="E"/>在嵩山召开五岳并派大会，企图并五岳、灭魔教、挟少林武当，达到一统江湖的目的<br>
+                </form>
+            </li>
+</ol>
+<input type="button" name="submit" value="开始评分" onClick=scorequiz(this.form) class="pt9">
+<input type="reset" name="reset" value="重新测试" onClick=clearquiz(this.form) class="pt9">  
+</body>
+</html>
